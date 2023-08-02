@@ -1,0 +1,77 @@
+@import url(./estilo/header.css);
+@import url(estilo/banner.css);
+@import url(estilo/carrossel.css);
+@import url(estilo/topicos.css);
+@import url(estilo/novidades.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: white;
+    --laranja: #eb9e00;
+    --azul-gradiente: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: 'Poppins';
+    --azul: #002f52;
+    --fonte-secundaria: 'Josefin Sans';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px
+}
+
+hr{
+    margin: 0;
+}
+
+footer{
+    background-color: #F9F9F9;
+}
+footer > h3{
+    padding: 1.5em;
+    color: black;
+    font-weight: 500;
+}
+.lista-rodape{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__grpo-alura{
+        font-size: 24px;
+        text-transform: uppercase;
+        padding-top: 1em;
+    }
+
+    .lista-rodape{
+        margin-top: 1.5em;
+        display: block;
+    }
+
+    .lista-rodape__item{
+        display: flex;
+        align-items: center;
+        margin: 0.5em 0;
+    }
+
+    .lista-rodape__link{
+        color: #474646;
+        text-decoration: none;
+        margin-left: 0.4em;
+    }
+
+    .lista-rodape__titulo{
+        font-size: 14px;
+        color: #858585;
+        text-transform: uppercase;
+    }
+}
